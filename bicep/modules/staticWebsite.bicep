@@ -27,8 +27,8 @@ resource storageRoleAssignments 'Microsoft.Authorization/roleAssignments@2022-04
   }
 }]
 
-resource enableStaticWebsite 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
-  name: 'depscript-${project}-enable-static-website'
+resource createStaticWebsite 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
+  name: 'depscript-${project}-create-static-website'
   kind: 'AzureCLI'
   location: location
   tags: tags
@@ -45,28 +45,6 @@ resource enableStaticWebsite 'Microsoft.Resources/deploymentScripts@2020-10-01' 
   properties: {
     retentionInterval: 'PT4H'
     azCliVersion: '2.54.0'
-    scriptContent: 'az storage blob service-properties update --account-name ${storageAccount.name} --static-website --404-document error.html --index-document index.html'
-  }
-}
-
-resource uploadBlobs 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
-  name: 'depscript-${project}-upload-blobs'
-  kind: 'AzureCLI'
-  location: location
-  tags: tags
-
-  identity: {
-    type: 'UserAssigned'
-    userAssignedIdentities: {
-      '${msi.id}': {}
-    }
-  }
-
-  dependsOn: [ enableStaticWebsite ]
-
-  properties: {
-    azCliVersion: '2.54.0'
-    retentionInterval: 'PT4H'
 
     environmentVariables: [
       {
@@ -88,10 +66,11 @@ resource uploadBlobs 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
     ]
 
     scriptContent: '''
+az storage blob service-properties update --static-website --404-document error.html --index-document index.html
 echo "$INDEX_CONTENT" | base64 -d > index.html
 echo "$ERROR_CONTENT" | base64 -d > error.html
 echo "$CSS_CONTENT" | base64 -d > main.css
-az storage blob upload-batch -s . -d '$web' --overwrite
+az storage blob upload-batch -s . -d '$web' --overwrite    
 '''
   }
 }
