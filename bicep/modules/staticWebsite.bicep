@@ -74,24 +74,25 @@ resource uploadBlobs 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
         value: storageAccount.name
       }
       {
-        name: 'AZURE_STORAGE_KEY'
-        secureValue: storageAccount.listKeys().keys[0].value
-      }
-      {
         name: 'INDEX_CONTENT'
-        value: loadTextContent('../src/index.html')
+        value: loadFileAsBase64('../src/index.html')
       }
       {
         name: 'ERROR_CONTENT'
-        value: loadTextContent('../src/error.html')
+        value: loadFileAsBase64('../src/error.html')
       }
       {
         name: 'CSS_CONTENT'
-        value: loadTextContent('../src/main.css')
+        value: loadFileAsBase64('../src/main.css')
       }
     ]
 
-    scriptContent: 'echo $INDEX_CONTENT > index.html && echo $ERROR_CONTENT > error.html && echo $CSS_CONTENT > main.css && az storage blob upload-batch -s . -d \'$web\' --overwrite'
+    scriptContent: '''
+echo "$INDEX_CONTENT" | base64 -d > index.html
+echo "$ERROR_CONTENT" | base64 -d > error.html
+echo "$CSS_CONTENT" | base64 -d > main.css
+az storage blob upload-batch -s . -d '$web' --overwrite
+'''
   }
 }
 
