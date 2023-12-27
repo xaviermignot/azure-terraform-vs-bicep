@@ -25,5 +25,5 @@ resource "azurerm_storage_blob" "files" {
 
   type         = "Block"
   content_type = "text/${split(".", each.key)[1]}; charset=utf-8"
-  source       = "src/${each.key}"
+  source       = "../../src/terraform/${each.key}"
 }
