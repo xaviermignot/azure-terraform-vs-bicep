@@ -53,15 +53,15 @@ resource createStaticWebsite 'Microsoft.Resources/deploymentScripts@2020-10-01' 
       }
       {
         name: 'INDEX_CONTENT'
-        value: loadFileAsBase64('../../../src/bicep/index.html')
+        value: base64(replace(loadTextContent('../../../src/index.html'), '##IAC_TOOL##', 'Bicep 🦾'))
       }
       {
         name: 'ERROR_CONTENT'
-        value: loadFileAsBase64('../../../src/bicep/error.html')
+        value: loadFileAsBase64('../../../src/error.html')
       }
       {
         name: 'CSS_CONTENT'
-        value: loadFileAsBase64('../../../src/bicep/main.css')
+        value: loadFileAsBase64('../../../src/main.css')
       }
     ]
 

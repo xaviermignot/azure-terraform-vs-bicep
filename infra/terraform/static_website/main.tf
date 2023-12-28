@@ -23,7 +23,7 @@ resource "azurerm_storage_blob" "files" {
   storage_account_name   = azurerm_storage_account.account.name
   storage_container_name = "$web"
 
-  type         = "Block"
-  content_type = "text/${split(".", each.key)[1]}; charset=utf-8"
-  source       = "../../src/terraform/${each.key}"
+  type           = "Block"
+  content_type   = "text/${split(".", each.key)[1]}; charset=utf-8"
+  source_content = replace(file("../../src/${each.key}"), "##IAC_TOOL##", "Terraform 🚀")
 }
