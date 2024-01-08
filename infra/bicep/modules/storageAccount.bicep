@@ -4,7 +4,7 @@ param uniqueSuffix string
 param tags { *: string }
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
-#disable-next-line BCP334
+  #disable-next-line BCP334
   name: take(replace('st${project}${uniqueSuffix}', '-', ''), 24)
   location: location
   tags: tags

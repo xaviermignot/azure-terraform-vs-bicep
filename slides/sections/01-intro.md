@@ -14,8 +14,8 @@ What the hell are we talking about ? <twemoji-thinking-face />
 <v-click>
 
 Two Infrastructure-as-Code tools:
-- Bicep <twemoji-mechanical-arm />, a DSL provided by Microsoft
-- Terraform <logos-terraform-icon />, a tool provided by HashiCorp
+* Bicep <twemoji-mechanical-arm />, a DSL provided by Microsoft
+* Terraform <logos-terraform-icon />, a tool provided by HashiCorp
 
 </v-click>
 
@@ -36,7 +36,7 @@ Declarative vs imperative
 </v-click>
 
 ---
-layout: fact
+layout: statement
 ---
 
 # This is not a multi-cloud issue

@@ -24,3 +24,15 @@ module staticWebsite 'modules/staticWebsite.bicep' = {
 }
 
 output websiteEndpoint string = staticWebsite.outputs.websiteEndpoint
+
+module isEven 'modules/isEven.bicep' = [for value in [1, 2, 3]: {
+  name: 'is-even-${value}'
+  params: {
+    value: value
+  }
+}]
+
+output isEvenResults array = [for (value, index) in [1, 2, 3]: {
+  value: value
+  isEven: isEven[index].outputs.result
+}]

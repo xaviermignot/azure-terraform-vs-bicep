@@ -2,12 +2,10 @@
 layout: section
 ---
 
-# The main differences
+# State or no state
+
 
 <!-- 
-- Execution mode
-  - integrating other components
-  - multi-tool
 - State vs no state 
   - ability to delete resources
   - less tolerance to outside changes
