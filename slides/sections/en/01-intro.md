@@ -9,7 +9,7 @@ layout: default
 ---
 
 # Introduction
-What the hell are we talking about ? <twemoji-thinking-face />
+What the hell are we talking about ? <twemojithinking-face />
 
 <v-click>
 

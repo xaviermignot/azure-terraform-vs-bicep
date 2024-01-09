@@ -22,23 +22,23 @@ layout: default
 ## Wrapping up
 
 ---
-src: ./sections/01-intro.md
+src: ./sections/en/01-intro.md
 ---
 
 ---
-src: ./sections/02-execution-mode.md
+src: ./sections/en/02-execution-mode.md
 ---
 
 ---
-src: ./sections/03-state-no-state.md
+src: ./sections/en/03-state-no-state.md
 ---
 
 ---
-src: ./sections/04-other-differences.md
+src: ./sections/en/04-other-differences.md
 ---
 
 ---
-src: ./sections/05-wrapping-up.md
+src: ./sections/en/05-wrapping-up.md
 ---
 
 ---

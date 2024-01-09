@@ -1,14 +1,19 @@
 #!/bin/sh
 
-[ "$AZURE_LOCATION" ] || (
-    echo "Please set the AZURE_LOCATION env variable"
-    exit
-)
+while getopts ":l:" opt; do
+    case "${opt}" in
+    l) azure_location=${OPTARG} ;;
+    \?) echo "Invalid option: -$OPTARG" >&2 || exit 1 ;;
+    esac
+done
+
+# Return errors if any argument or varenv is missing
+: "${azure_location:?Missing -l argument (azure location)}"
 
 script_dir=$(dirname "$0")
-echo "Deploying in $AZURE_LOCATION..."
-outputs=$(az deployment sub create -n 'deploy-tf-vs-bicep-state' -l "$AZURE_LOCATION" \
-    -f "$script_dir/main.bicep" -p location="$AZURE_LOCATION" \
+echo "Deploying in $azure_location..."
+outputs=$(az deployment sub create -n 'deploy-tf-vs-bicep-state' -l "$azure_location" \
+    -f "$script_dir/main.bicep" -p location="$azure_location" \
     --query '{ "resourceGroupName": properties.outputs.resourceGroupName.value, "containerName": properties.outputs.containerName.value, "storageAccountName": properties.outputs.storageAccountName.value }' |
     jq -c)
 
