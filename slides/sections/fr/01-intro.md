@@ -5,8 +5,6 @@ layout: section
 # Introduction
 
 ---
-layout: default
----
 
 # Introduction
 De quoi parle-t-on au juste ? <twemoji-thinking-face />
@@ -36,6 +34,84 @@ Mode déclaratif ou impératif ?
 - Impératif: on décrit les actions à réaliser
 
 </v-click>
+
+---
+layout: two-cols-header
+---
+
+# Un exemple de code tout simple
+## D'abord avec Bicep <twemoji-mechanical-arm />
+
+::left::
+
+<v-clicks at="0">
+
+* Déclaration d'une variable locale
+* Une ressource avec un type
+* Les paramètres de la resource
+
+</v-clicks>
+
+::right::
+
+```bicep {all|1|2|3-4|all} {lines:true, at:0}
+var myProject = 'my-project'
+resource rg 'Microsoft.Resources/resourceGroups@2023-07-01' = {
+  name: 'rg-${myProject}'
+  location: 'canadaeast'
+}
+```
+
+---
+layout: two-cols-header
+---
+
+# Un exemple de code tout simple
+## Maintenant avec Terraform <logos-terraform-icon />
+
+::left::
+
+```hcl {all|1-3|4|5-6|all}
+locals {
+  my_project = "my-project"
+}
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-${local.my_project}"
+  location = "canadaeast"
+}
+```
+
+::right::
+
+<v-clicks at="0">
+
+* Déclaration d'une variable locale
+* Une ressource avec un type
+* Les paramètres de la resource
+
+</v-clicks>
+
+---
+
+# Un exemple de code tout simple
+
+## Avec Bicep <twemoji-mechanical-arm />
+```bicep {all|1|2|3-4|all} {at:0}
+var myProject = 'my-project'
+resource rg 'Microsoft.Resources/resourceGroups@2023-07-01' = {
+  name: 'rg-${myProject}'
+  location: 'canadaeast'
+}
+```
+
+## Avec Terraform <logos-terraform-icon />
+```ts {all|1|2|3-4|all} {at:0}
+locals {  my_project = "my-project" }
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-${local.my_project}"
+  location = "canadaeast"
+}
+```
 
 ---
 layout: statement
