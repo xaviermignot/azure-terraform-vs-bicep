@@ -4,9 +4,7 @@ image: thanks.jpg
 title: Questions ?
 ---
 
-# Thank you <twemoji-folded-hands />
-
-## Any question <twemoji-thinking-face /> <twemoji-red-question-mark />
+# Des questions <twemoji-thinking-face /> <twemoji-red-question-mark />
 
 ## Let's keep in touch !
 ### <mdi-edit-outline color="#007fff" /> [blog.xmi.fr](https://blog.xmi.fr)

@@ -23,9 +23,9 @@ image: 02-execution-mode-terraform.jpg
 
 ---
 
-# Concrètement, qu'est-ce que ça change ?
+# Qu'est-ce que ça change ?
 
-- L'organisation du code n'est pas la même
-- Interaction avec d'autres composants
-- Tout doit être "calculé" au début du déploiement
-  - Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits)
+## L'organisation du code n'est pas la même
+## Interaction avec d'autres composants
+## Tout doit être "calculé" au début du déploiement
+  ### Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits)

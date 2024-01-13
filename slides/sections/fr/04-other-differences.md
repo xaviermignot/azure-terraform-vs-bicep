@@ -7,9 +7,14 @@ layout: section
 ---
 
 # Quelques petits "détails"
-- Fonctionnalités de chaque langage (boucles, fonctions, etc.)
-- Intégration dans Visual Studio Code
-- Eco-système: linters, etc.
+
+## Fonctionnalités de chaque langage (boucles, fonctions, etc.)
+
+## Intégration dans Visual Studio Code
+
+## Eco-système: linters, etc.
+
+---
 
 # Quelques vérités pas toujours vraies
 

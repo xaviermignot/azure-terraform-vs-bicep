@@ -22,4 +22,11 @@
         margin-top: 1.5rem;
     }
 
+    h2:has(+ h3) {
+        margin-bottom: unset;
+    }
+
+    h3:has(+ h2) {
+        margin-bottom: 2rem;
+    }
 }

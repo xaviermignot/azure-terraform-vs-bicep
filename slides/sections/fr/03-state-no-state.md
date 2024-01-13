@@ -27,8 +27,11 @@ layout: section
 
 # Et là, qu'est-ce que ça change ?
 
-- Possibilité de supprimer des ressources
-- Attention aux changements hors IaC <twemoji-warning />
-  - qui ne viennent par forcément du portail <twemoji-face-with-monocle />
-- Moins facile de faire du refactoring
-- On peut y stocker autre chose que des ressources Azure
+## Possibilité de supprimer des ressources
+
+## Attention aux changements hors IaC <twemoji-warning />  
+### qui ne viennent par forcément du portail <twemoji-face-with-monocle />
+
+## Moins facile de faire du refactoring
+
+## On peut y stocker autre chose que des ressources Azure
