@@ -1,0 +1,25 @@
+.slidev-layout {
+    h1 {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 + h2 {
+        margin-top: 2rem;
+    }
+
+    h1 + p {
+        margin-bottom: 2rem;
+    }
+
+    ul + h3 {
+        margin-top: 1.5rem;
+    }
+
+}
