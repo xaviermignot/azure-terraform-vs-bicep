@@ -92,8 +92,12 @@ resource "azurerm_resource_group" "rg" {
 </v-clicks>
 
 ---
+layout: two-cols-header
+---
 
 # Un exemple de code tout simple
+
+::left::
 
 ## Avec Bicep <twemoji-mechanical-arm />
 ```bicep {all|1|2|3-4|all} {at:0}
@@ -112,6 +116,16 @@ resource "azurerm_resource_group" "rg" {
   location = "canadaeast"
 }
 ```
+
+::right::
+
+<v-clicks at="0">
+
+* Déclaration d'une variable locale
+* Une ressource avec un type
+* Les paramètres de la resource
+
+</v-clicks>
 
 ---
 layout: statement
