@@ -4,46 +4,26 @@ image: thanks.jpg
 title: Questions ?
 ---
 
-# Des questions <twemoji-thinking-face /> <twemoji-red-question-mark />
+# Des questions 
+# <twemoji-thinking-face /> <twemoji-red-question-mark />
 
-## Let's keep in touch !
+## Quelques liens
+### <mdi-presentation-play color="#007fff" /> [tf-bicep-slides.xmi.fr](https://tf-bicep-slides.xmi.fr)
+### <mdi-github color="#007fff" /> [xaviermignot/azure-terraform-vs-bicep](https://github.com/xaviermignot/azure-terraform-vs-bicep)
 ### <mdi-edit-outline color="#007fff" /> [blog.xmi.fr](https://blog.xmi.fr)
-### Link to slides
-### Link to blog post
-### Link to LK profile
+### <mdi-linkedin color="#007fff" /> [@mignotxavier](https://www.linkedin.com/in/mignotxavier)
 
-<!-- <div flex flex-col items-center gap-3 h-full>
-  <div text-5xl items-center>
-    Thank you <twemoji-folded-hands />
-  </div>
-  <div self-start text-2xl mt-3>
-    Any question <twemoji-thinking-face /> <twemoji-red-question-mark />
-  </div>
-  <div self-start text-2xl>
-    Let's keep in touch !
-    <ul class="list-disc">
-      <li></li>
-    </ul>
-  </div>
-  <div></div>
-</div> -->
+<style>
+  h1 {
+    font-size: 2.75rem;
+  }
 
-<!-- 
-<div flex flex-col items-center gap-3 h-full>
-  <div>
-  <h1 my-auto>Merci</h1>
-  <p>@xaviernoya</p>
-  </div>
-  <div self-start>
-    <ph:code-bold color="orange" mr-2/>
-    <a href="https://vuejs.org/">https://vuejs.org/</a>
-  </div>
-  <div self-start mb-10>
-    <material-symbols:menu-book-outline color="orange" mr-2/>
-    <a href="https://techwatching.dev">https://techwatching.dev</a>
-  </div>
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem !important;
+  }
 
-  <div flex flex-row gap-30>
-    <div text-orange mt-auto>Des questions ?</div>
-  </div>
-</div>  -->
+  h3 {
+    font-size: 1.2rem;
+  }
+</style>
