@@ -33,7 +33,7 @@ output websiteEndpoint string = staticWebsite.outputs.websiteEndpoint
 //   }
 // }]
 
-// output isEvenResults array = [for (value, index) in numbers: {
-//   value: value
-//   isEven: isEven[index].outputs.result
-// }]
+// // var isEvenResults = [for (value, index) in numbers: {
+// //   value: value
+// //   isEven: isEven[index].outputs.result
+// // }]

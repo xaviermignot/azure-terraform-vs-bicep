@@ -7,6 +7,9 @@ layout: section
 ---
 
 # Quelques petits "détails"
+Qui ne doivent pas guider votre choix
+
+<v-clicks>
 
 ## Fonctionnalités de chaque langage (boucles, fonctions, etc.)
 
@@ -14,9 +17,19 @@ layout: section
 
 ## Eco-système: linters, etc.
 
+</v-clicks>
+
 ---
 
 # Quelques vérités pas toujours vraies
+
+<v-clicks>
+
+## Tout est possible dans Azure avec Bicep dès le premier jour
+
+## Seul Bicep est supporté par Microsoft
+
+</v-clicks>
 
 
 <!-- 

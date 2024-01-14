@@ -25,7 +25,12 @@ image: 02-execution-mode-terraform.jpg
 
 # Qu'est-ce que ça change ?
 
+<v-clicks>
+
+## Interaction avec d'autres outils, APIs, ou clouds
+### Bicep est "limité" à l'API Azure Resource Manager
 ## L'organisation du code n'est pas la même
-## Interaction avec d'autres composants
 ## Tout doit être "calculé" au début du déploiement
-  ### Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits)
+### Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits)
+  
+</v-clicks>
