@@ -13,12 +13,12 @@ layout: section
 
 ---
 layout: image
-image: 01-execution-mode-bicep.jpg
+image: execution-mode-bicep.png
 ---
 
 ---
 layout: image
-image: 02-execution-mode-terraform.jpg
+image: execution-mode-terraform.png
 ---
 
 ---
@@ -31,6 +31,6 @@ image: 02-execution-mode-terraform.jpg
 ### Bicep est "limité" à l'API Azure Resource Manager
 ## L'organisation du code n'est pas la même
 ## Tout doit être "calculé" au début du déploiement
-### Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits)
+### Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits) et [là](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-files#loadjsoncontent)
   
 </v-clicks>
