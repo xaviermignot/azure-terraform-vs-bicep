@@ -7,12 +7,6 @@ background: cover.png
 Quelle solution IaC pour Azure ?
 
 ---
-src: ./pages/about-me.md
----
-
----
-layout: default
----
 
 # Agenda
 
@@ -20,6 +14,10 @@ layout: default
 ## Première grosse différence
 ## Seconde grosse différence
 ## Conclusion
+
+---
+src: ./pages/about-me.md
+---
 
 ---
 src: ./sections/fr/01-intro.md

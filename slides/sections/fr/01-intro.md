@@ -26,11 +26,15 @@ De quoi parle-t-on au juste ? <twemoji-thinking-face />
 <v-click>
 
 ### Avec plusieurs points communs
-* Mode déclaratif (vs impératif)
-* Un workflow similaire: validate, plan, apply
-* Deux syntaxes qui se ressemblent
 
 </v-click>
+<v-clicks depth="2">
+
+- Mode déclaratif (vs impératif)
+- Un workflow similaire: validate, plan/what-if, apply
+- Deux syntaxes qui se ressemblent
+
+</v-clicks>
 
 ---
 clicks: 4
@@ -63,9 +67,3 @@ layout: statement
 ---
 
 # Ce n'est pas juste une question de multi-cloud <twemoji-winking-face />
-
-<!-- 
-- What are Bicep & Terraform (IaC, Imperative, ...)
-- The similarities (syntax lookalike, commands, ...)
--->
-
