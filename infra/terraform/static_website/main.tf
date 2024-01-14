@@ -16,6 +16,11 @@ resource "azurerm_storage_account" "account" {
   }
 }
 
+# resource "azurerm_storage_container" "some_container" {
+#   storage_account_name = azurerm_storage_account.account.name
+#   name                 = "some-container"
+# }
+
 resource "azurerm_storage_blob" "files" {
   for_each = toset(["index.html", "error.html", "main.css"])
 

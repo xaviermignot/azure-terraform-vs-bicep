@@ -24,3 +24,16 @@ module staticWebsite 'modules/staticWebsite.bicep' = {
 }
 
 output websiteEndpoint string = staticWebsite.outputs.websiteEndpoint
+
+// var numbers = [1, 2, 3]
+// module isEven 'modules/isEven.bicep' = [for value in numbers: {
+//   name: 'is-even-${value}'
+//   params: {
+//     value: value
+//   }
+// }]
+
+// // var isEvenResults = [for (value, index) in numbers: {
+// //   value: value
+// //   isEven: isEven[index].outputs.result
+// // }]
