@@ -38,3 +38,12 @@ There are commented lines in the code, start by uncommenting these and see how i
 Once you are done, don't forget to remove the created resources, even if they cost almost nothing:
 - From the `infra/terraform` folder, run `tofu destroy -auto-approve` to destroy the resources provisioned with OpenTofu. Run also `az group delete -n rg-tf-vs-bicep-state` to remove the state's storage account.
 - For Bicep, run `az group delete -n rg-tf-vs-bicep` from any folder.
+
+## View the slides
+You can view the slides directly [here](https://tf-bicep-slides.xmi.fr/).  
+If it doesn't work, or you want to run them locally, go to the `slides` folder from your terminal and run:
+```shell
+npm install
+npm run dev
+```
+It will install the tooling ([Slidev](https://sli.dev/) 🤩) and make the slides available at http://localhost:3030. Go check out Slidev's [website](https://sli.dev/guide/) to learn how it works !
