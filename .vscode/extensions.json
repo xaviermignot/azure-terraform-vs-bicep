@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "antfu.slidev"
+        "antfu.slidev",
+        "ms-azuretools.vscode-bicep",
+        "mads-hartmann.bash-ide-vscode",
+        "hashicorp.terraform"
     ]
 }

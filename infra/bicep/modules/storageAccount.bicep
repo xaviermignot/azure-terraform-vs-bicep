@@ -23,9 +23,4 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   // }
 }
 
-resource app 'Microsoft.Web/sites@2023-01-01' = {
-  name: 'my-app'
-  location: location
-}
-
 output storageAccountName string = storageAccount.name
