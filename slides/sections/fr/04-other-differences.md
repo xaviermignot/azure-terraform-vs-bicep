@@ -31,13 +31,7 @@ Qui ne doivent pas guider votre choix
 
 </v-clicks>
 
-
 <!-- 
-- Some remaining details
-  - Language features
-  - VS Code integration
-  - Tooling
-- Statements not always true
-  - Bicep is fine unless you do multi-cloud
-  - Everything is supported "out of the box" in Bicep 
--->
+Montrer le static website avec un deployment script en Bicep
+Toute nouvelle feature doit être dans le provider AzureRm pour passer en GA
+ -->

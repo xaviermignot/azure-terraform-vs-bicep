@@ -37,29 +37,31 @@ De quoi parle-t-on au juste ? <twemoji-thinking-face />
 </v-clicks>
 
 ---
-clicks: 4
+clicks: 5
 ---
 
 # Un exemple de code tout simple
 
 ## Avec Bicep <twemoji-mechanical-arm />
 
-```bicep {all|1|2|3-4|all} {at:0}
+```bicep {all|1|2|3-4|6|all} {at:0}
 var myProject = 'my-project'
 resource rg 'Microsoft.Resources/resourceGroups@2023-07-01' = {
   name: 'rg-${myProject}'
   location: 'canadaeast'
 }
+output rgName string = rg.name
 ```
 
 ## Avec Terraform <logos-terraform-icon />
 
-```ts {all|1|2|3-4|all} {at:0}
+```hcl {all|1|2|3-4|6|all} {at:0}
 locals {  my_project = "my-project" }
 resource "azurerm_resource_group" "rg" {
   name     = "rg-${local.my_project}"
   location = "canadaeast"
 }
+output "rg_name" { value = azurerm_resource_group.rg.name }
 ```
 
 ---
