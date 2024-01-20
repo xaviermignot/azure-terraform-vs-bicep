@@ -4,12 +4,12 @@ layout: section
 
 # Première différence
 
-<v-clicks>
+<v-click>
 
 ## Le mode d'exécution
 ### (Qu'est-ce qui se passe lorsque chaque outil tourne ?)
 
-</v-clicks>
+</v-click>
 
 ---
 layout: section
@@ -60,8 +60,10 @@ Limitation à l'API Resource Manager
 - Impossible de créer des blobs
 - Impossible de créer des objets dans Azure Ad (App Registrations, groupes, etc.)
 - Montrer le deployment script
+
 Organisation du code
 - En Bicep, 1 fichier = 1 déploiement
+
 S'il y a du temps, montrer le module isEven (Bicep en priorité)
 - Dé-commenter le code dans resources.bicep
 - Transformer la variable en output

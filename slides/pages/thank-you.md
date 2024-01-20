@@ -14,16 +14,7 @@ title: Questions ?
 ### <mdi-linkedin color="#007fff" /> [@mignotxavier](https://www.linkedin.com/in/mignotxavier)
 
 <style>
-  h1 {
-    font-size: 2.75rem;
-  }
-
   h2 {
-    font-size: 1.75rem;
     margin-bottom: 1rem !important;
-  }
-
-  h3 {
-    font-size: 1.2rem;
   }
 </style>
