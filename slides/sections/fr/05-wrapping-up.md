@@ -42,8 +42,9 @@ Quelque soit la solution utilisée
 ## Découpez/modulez votre code
 ## Exécutez le (souvent)
 ### La sandbox est votre amie <twemoji-desert-island />
+### Le GitOps votre chemin <logos-git-icon />
 ## Votre objectif: avoir confiance <twemoji-smiling-face-with-sunglasses />
-### Cf ce talk <twemoji-flag-united-states /> sur le test de code IaC
+### Cf ce talk (en anglais) sur le test de code IaC
 <Youtube id="xhHOW0EF5u8" />
 
 </v-clicks>

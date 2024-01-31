@@ -18,8 +18,9 @@ layout: section
 ## Un aspect spécifique à <logos-terraform-icon />
 
 ## Un fichier JSON avec toute notre infra
-### Il faut le mutualiser <twemoji-handshake />
-### Et le sécuriser <twemoji-face-screaming-in-fear />
+### En local par défaut <twemoji-house />...
+### ... mais il faut le mutualiser <twemoji-handshake />...
+### ... et le sécuriser <twemoji-face-screaming-in-fear />
 
 ## A quoi sert le state ?
 ### A éviter les collisions <twemoji-vertical-traffic-light />

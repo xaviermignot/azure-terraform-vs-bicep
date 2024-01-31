@@ -51,7 +51,8 @@ image: execution-mode-terraform.png
 ### Bicep est "limité" à l'API Azure Resource Manager
 ## L'organisation du code n'est pas la même
 ## Tout doit être "calculé" au début du déploiement
-### Exemple [ici](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits) et [là](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-files#loadjsoncontent)
+### Limitation sur les [fichiers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-files#loadjsoncontent) <twemoji-file-folder />
+### Et sur les [boucles](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/loops#loop-limits) <twemoji-recycling-symbol />
   
 </v-clicks>
 
