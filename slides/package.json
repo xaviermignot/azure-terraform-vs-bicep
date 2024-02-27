@@ -8,10 +8,8 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.46.2",
-    "@slidev/theme-apple-basic": "^0.20.0",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/cli": "^0.47.5",
+    "@slidev/theme-default": "latest"
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.42",
