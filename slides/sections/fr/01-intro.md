@@ -44,7 +44,7 @@ clicks: 5
 
 ## Avec Bicep <twemoji-mechanical-arm />
 
-```bicep {all|1|2|3-4|6|all}{at:0}
+```bicep {all|1|2|3-4|6|all}
 var myProject = 'my-project'
 resource rg 'Microsoft.Resources/resourceGroups@2023-07-01' = {
   name: 'rg-${myProject}'
@@ -55,7 +55,7 @@ output rgName string = rg.name
 
 ## Avec Terraform <logos-terraform-icon />
 
-```hcl {all|1|2|3-4|6|all}{at:0}
+```hcl {all|1|2|3-4|6|all}{at:1}
 locals {  my_project = "my-project" }
 resource "azurerm_resource_group" "rg" {
   name     = "rg-${local.my_project}"
