@@ -10,7 +10,8 @@ done
 # Return errors if any argument or varenv is missing
 : "${azure_location:?Missing -l argument (azure location)}"
 
-script_dir=$(dirname "$0")
+script_dir="$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P)"
+
 echo "Deploying in $azure_location..."
 outputs=$(az deployment sub create -n 'deploy-tf-vs-bicep-state' -l "$azure_location" \
     -f "$script_dir/main.bicep" -p location="$azure_location" \
