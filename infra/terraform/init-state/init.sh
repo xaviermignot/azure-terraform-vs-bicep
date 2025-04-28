@@ -21,6 +21,7 @@ outputs=$(az deployment sub create -n 'deploy-tf-vs-bicep-state' -l "$azure_loca
 resource_group_name=$(echo "$outputs" | jq -r .resourceGroupName)
 container_name=$(echo "$outputs" | jq -r .containerName)
 account_name=$(echo "$outputs" | jq -r .storageAccountName)
+subscription_id=$(az account show --query id -o tsv)
 
 backend_config_path="$script_dir/../config.azurerm.tfbackend"
 echo "Writing the following content to the config.azurerm.tfbackend file:"
@@ -28,6 +29,9 @@ tee "$backend_config_path" <<EOT
 resource_group_name = "$resource_group_name"
 storage_account_name = "$account_name"
 container_name = "$container_name"
+subscription_id = "$subscription_id"
 EOT
 
-tofu -chdir="$(dirname "$backend_config_path")" init -backend-config="$backend_config_path"
+export ARM_SUBSCRIPTION_ID="$subscription_id"
+
+tofu -chdir="$(dirname "$backend_config_path")" init -backend-config="$backend_config_path" -reconfigure

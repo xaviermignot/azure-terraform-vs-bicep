@@ -13,7 +13,11 @@ Make sure the following prerequisites are met:
 3. Azure CLI is installed and you are authenticated against your subscription
 4. OpenTofu is installed (instructions [here](https://opentofu.org/docs/intro/install/))
 
-If everything is ok, go to the `infra/terraform` folder from your terminal and run `init-state/init.sh -l <AZURE-REGION>` (replace `<AZURE-REGION>`) with the Azure region you want to use (`candaeast`, `francecentral`, etc.).  
+If everything is ok, go to the `infra/terraform` folder from your terminal and run the following command (replace `<AZURE-REGION>`) with the Azure region you want to use (`candaeast`, `francecentral`, etc.):  
+```shell
+ . ./init-state/init.sh -l <AZURE-REGION>
+ ```
+_(The dot before the script path is important because the script exports an environment variable)_   
 This will provision a storage account to host Tofu's state in your Azure subscription, and initialize Tofu using the newly created file `config.azurerm.tfbackend` for the backend configuration.
 
 Then you can go ahead and run `tofu validate`, `tofu plan` and `tofu apply` (or `tofu apply -auto-approve`) to provision the resources.
